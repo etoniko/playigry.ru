@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PlayIgry.ru — онлайн коллекция лучших браузерных игр 2025. Играй мгновенно без скачивания.">
     <title>Играть</title>
-
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta property="og:title" content="PlayIgry.ru — онлайн-игры">
     <meta property="og:description" content="Мгновенный запуск игр на любом устройстве">
     <meta property="og:image" content="https://playigry.ru/og-preview.jpg">
@@ -369,7 +369,7 @@
             const count = document.querySelectorAll('.game-card').length;
             const counter = document.getElementById('game-counter');
             let start = 0;
-            const duration = 1500;
+            const duration = 0;
             const increment = count / (duration / 16);
             const timer = setInterval(() => {
                 start += increment;
@@ -408,8 +408,7 @@
             });
         });
 
-        // Запуск счётчика при загрузке
-        window.onload = updateCounter;
+updateCounter();
     </script>
 </body>
 </html>
